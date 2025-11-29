@@ -1,0 +1,10 @@
+[build]
+  base = "shadcn-ui"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+# SPA redirect: serve index.html for all routes that don't match a file
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
